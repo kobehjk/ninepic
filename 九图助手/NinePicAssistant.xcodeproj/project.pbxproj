@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0EF46554216AF7FB002BA22B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46553216AF7FB002BA22B /* AppDelegate.swift */; };
-		0EF46556216AF7FB002BA22B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46555216AF7FB002BA22B /* ViewController.swift */; };
-		0EF46559216AF7FB002BA22B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF46557216AF7FB002BA22B /* Main.storyboard */; };
 		0EF4655B216AF7FC002BA22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF4655A216AF7FC002BA22B /* Assets.xcassets */; };
 		0EF4655E216AF7FC002BA22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF4655C216AF7FC002BA22B /* LaunchScreen.storyboard */; };
 		0EF46569216AF7FC002BA22B /* ____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46568216AF7FC002BA22B /* ____Tests.swift */; };
 		0EF46574216AF7FC002BA22B /* ____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46573216AF7FC002BA22B /* ____UITests.swift */; };
+		0EF46583216B0476002BA22B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46582216B0476002BA22B /* BaseViewController.swift */; };
+		0EF46585216B048B002BA22B /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46584216B048B002BA22B /* TopViewController.swift */; };
+		0EF46586216B048B002BA22B /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46584216B048B002BA22B /* TopViewController.swift */; };
+		0EF46587216B048B002BA22B /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46584216B048B002BA22B /* TopViewController.swift */; };
+		0EF46589216B04C8002BA22B /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46588216B04C8002BA22B /* TabMainViewController.swift */; };
+		0EF4658A216B04C8002BA22B /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46588216B04C8002BA22B /* TabMainViewController.swift */; };
+		0EF4658B216B04C8002BA22B /* TabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46588216B04C8002BA22B /* TabMainViewController.swift */; };
+		0EF4658F216B0658002BA22B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4658D216B0658002BA22B /* File.swift */; };
+		0EF46590216B0658002BA22B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4658D216B0658002BA22B /* File.swift */; };
+		0EF46591216B0658002BA22B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4658D216B0658002BA22B /* File.swift */; };
+		0EF46592216B0658002BA22B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4658E216B0658002BA22B /* Color+Extension.swift */; };
+		0EF46593216B0658002BA22B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4658E216B0658002BA22B /* Color+Extension.swift */; };
+		0EF46594216B0658002BA22B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4658E216B0658002BA22B /* Color+Extension.swift */; };
+		0EF46596216B3924002BA22B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46595216B3924002BA22B /* Common.swift */; };
+		0EF46599216B3A6C002BA22B /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF46598216B3A6C002BA22B /* TopCollectionViewCell.swift */; };
+		1CD3A6ECC156E80CDDB98676 /* Pods_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668095E86A31F4C6E3532506 /* Pods_____.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +48,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EF46550216AF7FB002BA22B /* 九图助手.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "九图助手.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF46550216AF7FB002BA22B /* NinePicAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinePicAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF46553216AF7FB002BA22B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0EF46555216AF7FB002BA22B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0EF46558216AF7FB002BA22B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EF4655A216AF7FC002BA22B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EF4655D216AF7FC002BA22B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EF4655F216AF7FC002BA22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EF46564216AF7FC002BA22B /* 九图助手Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "九图助手Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF46564216AF7FC002BA22B /* NinePicAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinePicAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF46568216AF7FC002BA22B /* ____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____Tests.swift"; sourceTree = "<group>"; };
 		0EF4656A216AF7FC002BA22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EF4656F216AF7FC002BA22B /* 九图助手UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "九图助手UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EF4656F216AF7FC002BA22B /* NinePicAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinePicAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF46573216AF7FC002BA22B /* ____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "____UITests.swift"; sourceTree = "<group>"; };
 		0EF46575216AF7FC002BA22B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EF46582216B0476002BA22B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0EF46584216B048B002BA22B /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		0EF46588216B04C8002BA22B /* TabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMainViewController.swift; sourceTree = "<group>"; };
+		0EF4658D216B0658002BA22B /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		0EF4658E216B0658002BA22B /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		0EF46595216B3924002BA22B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		0EF46598216B3A6C002BA22B /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
+		1FFC5FC5781A287315F91742 /* Pods-九图助手.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-九图助手.release.xcconfig"; path = "Pods/Target Support Files/Pods-九图助手/Pods-九图助手.release.xcconfig"; sourceTree = "<group>"; };
+		2F09B98ACCDD3364BB8EB288 /* Pods-九图助手.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-九图助手.debug.xcconfig"; path = "Pods/Target Support Files/Pods-九图助手/Pods-九图助手.debug.xcconfig"; sourceTree = "<group>"; };
+		668095E86A31F4C6E3532506 /* Pods_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD3A6ECC156E80CDDB98676 /* Pods_____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,15 +104,17 @@
 				0EF46567216AF7FC002BA22B /* 九图助手Tests */,
 				0EF46572216AF7FC002BA22B /* 九图助手UITests */,
 				0EF46551216AF7FB002BA22B /* Products */,
+				20FFAEEBC4F669470B226225 /* Pods */,
+				545C95B347EDD5FF6F5097DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		0EF46551216AF7FB002BA22B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0EF46550216AF7FB002BA22B /* 九图助手.app */,
-				0EF46564216AF7FC002BA22B /* 九图助手Tests.xctest */,
-				0EF4656F216AF7FC002BA22B /* 九图助手UITests.xctest */,
+				0EF46550216AF7FB002BA22B /* NinePicAssistant.app */,
+				0EF46564216AF7FC002BA22B /* NinePicAssistantTests.xctest */,
+				0EF4656F216AF7FC002BA22B /* NinePicAssistantUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +122,9 @@
 		0EF46552216AF7FB002BA22B /* 九图助手 */ = {
 			isa = PBXGroup;
 			children = (
+				0EF4658C216B0658002BA22B /* Tools */,
+				0EF46581216B045C002BA22B /* controller */,
 				0EF46553216AF7FB002BA22B /* AppDelegate.swift */,
-				0EF46555216AF7FB002BA22B /* ViewController.swift */,
-				0EF46557216AF7FB002BA22B /* Main.storyboard */,
 				0EF4655A216AF7FC002BA22B /* Assets.xcassets */,
 				0EF4655C216AF7FC002BA22B /* LaunchScreen.storyboard */,
 				0EF4655F216AF7FC002BA22B /* Info.plist */,
@@ -125,29 +150,77 @@
 			path = "九图助手UITests";
 			sourceTree = "<group>";
 		};
+		0EF46581216B045C002BA22B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EF46597216B3A43002BA22B /* Top */,
+				0EF46582216B0476002BA22B /* BaseViewController.swift */,
+				0EF46588216B04C8002BA22B /* TabMainViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		0EF4658C216B0658002BA22B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0EF46595216B3924002BA22B /* Common.swift */,
+				0EF4658D216B0658002BA22B /* File.swift */,
+				0EF4658E216B0658002BA22B /* Color+Extension.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0EF46597216B3A43002BA22B /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				0EF46584216B048B002BA22B /* TopViewController.swift */,
+				0EF46598216B3A6C002BA22B /* TopCollectionViewCell.swift */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		20FFAEEBC4F669470B226225 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F09B98ACCDD3364BB8EB288 /* Pods-九图助手.debug.xcconfig */,
+				1FFC5FC5781A287315F91742 /* Pods-九图助手.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		545C95B347EDD5FF6F5097DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				668095E86A31F4C6E3532506 /* Pods_____.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0EF4654F216AF7FA002BA22B /* 九图助手 */ = {
+		0EF4654F216AF7FA002BA22B /* NinePicAssistant */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EF46578216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "九图助手" */;
+			buildConfigurationList = 0EF46578216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "NinePicAssistant" */;
 			buildPhases = (
+				A51FA20FFA5A554F4B81492B /* [CP] Check Pods Manifest.lock */,
 				0EF4654C216AF7FA002BA22B /* Sources */,
 				0EF4654D216AF7FA002BA22B /* Frameworks */,
 				0EF4654E216AF7FA002BA22B /* Resources */,
+				184A2FCD4299FEAC045B77C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "九图助手";
+			name = NinePicAssistant;
 			productName = "九图助手";
-			productReference = 0EF46550216AF7FB002BA22B /* 九图助手.app */;
+			productReference = 0EF46550216AF7FB002BA22B /* NinePicAssistant.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0EF46563216AF7FC002BA22B /* 九图助手Tests */ = {
+		0EF46563216AF7FC002BA22B /* NinePicAssistantTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EF4657B216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "九图助手Tests" */;
+			buildConfigurationList = 0EF4657B216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "NinePicAssistantTests" */;
 			buildPhases = (
 				0EF46560216AF7FC002BA22B /* Sources */,
 				0EF46561216AF7FC002BA22B /* Frameworks */,
@@ -158,14 +231,14 @@
 			dependencies = (
 				0EF46566216AF7FC002BA22B /* PBXTargetDependency */,
 			);
-			name = "九图助手Tests";
+			name = NinePicAssistantTests;
 			productName = "九图助手Tests";
-			productReference = 0EF46564216AF7FC002BA22B /* 九图助手Tests.xctest */;
+			productReference = 0EF46564216AF7FC002BA22B /* NinePicAssistantTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0EF4656E216AF7FC002BA22B /* 九图助手UITests */ = {
+		0EF4656E216AF7FC002BA22B /* NinePicAssistantUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0EF4657E216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "九图助手UITests" */;
+			buildConfigurationList = 0EF4657E216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "NinePicAssistantUITests" */;
 			buildPhases = (
 				0EF4656B216AF7FC002BA22B /* Sources */,
 				0EF4656C216AF7FC002BA22B /* Frameworks */,
@@ -176,9 +249,9 @@
 			dependencies = (
 				0EF46571216AF7FC002BA22B /* PBXTargetDependency */,
 			);
-			name = "九图助手UITests";
+			name = NinePicAssistantUITests;
 			productName = "九图助手UITests";
-			productReference = 0EF4656F216AF7FC002BA22B /* 九图助手UITests.xctest */;
+			productReference = 0EF4656F216AF7FC002BA22B /* NinePicAssistantUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +277,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0EF4654B216AF7FA002BA22B /* Build configuration list for PBXProject "九图助手" */;
+			buildConfigurationList = 0EF4654B216AF7FA002BA22B /* Build configuration list for PBXProject "NinePicAssistant" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +290,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0EF4654F216AF7FA002BA22B /* 九图助手 */,
-				0EF46563216AF7FC002BA22B /* 九图助手Tests */,
-				0EF4656E216AF7FC002BA22B /* 九图助手UITests */,
+				0EF4654F216AF7FA002BA22B /* NinePicAssistant */,
+				0EF46563216AF7FC002BA22B /* NinePicAssistantTests */,
+				0EF4656E216AF7FC002BA22B /* NinePicAssistantUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +304,6 @@
 			files = (
 				0EF4655E216AF7FC002BA22B /* LaunchScreen.storyboard in Resources */,
 				0EF4655B216AF7FC002BA22B /* Assets.xcassets in Resources */,
-				0EF46559216AF7FB002BA22B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +323,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		184A2FCD4299FEAC045B77C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-九图助手/Pods-九图助手-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-九图助手/Pods-九图助手-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A51FA20FFA5A554F4B81492B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-九图助手-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0EF4654C216AF7FA002BA22B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF46556216AF7FB002BA22B /* ViewController.swift in Sources */,
+				0EF46599216B3A6C002BA22B /* TopCollectionViewCell.swift in Sources */,
+				0EF4658F216B0658002BA22B /* File.swift in Sources */,
+				0EF46592216B0658002BA22B /* Color+Extension.swift in Sources */,
+				0EF46589216B04C8002BA22B /* TabMainViewController.swift in Sources */,
+				0EF46585216B048B002BA22B /* TopViewController.swift in Sources */,
 				0EF46554216AF7FB002BA22B /* AppDelegate.swift in Sources */,
+				0EF46583216B0476002BA22B /* BaseViewController.swift in Sources */,
+				0EF46596216B3924002BA22B /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF46586216B048B002BA22B /* TopViewController.swift in Sources */,
+				0EF46593216B0658002BA22B /* Color+Extension.swift in Sources */,
+				0EF46590216B0658002BA22B /* File.swift in Sources */,
 				0EF46569216AF7FC002BA22B /* ____Tests.swift in Sources */,
+				0EF4658A216B04C8002BA22B /* TabMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF46587216B048B002BA22B /* TopViewController.swift in Sources */,
+				0EF46594216B0658002BA22B /* Color+Extension.swift in Sources */,
+				0EF46591216B0658002BA22B /* File.swift in Sources */,
 				0EF46574216AF7FC002BA22B /* ____UITests.swift in Sources */,
+				0EF4658B216B04C8002BA22B /* TabMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,25 +407,17 @@
 /* Begin PBXTargetDependency section */
 		0EF46566216AF7FC002BA22B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0EF4654F216AF7FA002BA22B /* 九图助手 */;
+			target = 0EF4654F216AF7FA002BA22B /* NinePicAssistant */;
 			targetProxy = 0EF46565216AF7FC002BA22B /* PBXContainerItemProxy */;
 		};
 		0EF46571216AF7FC002BA22B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0EF4654F216AF7FA002BA22B /* 九图助手 */;
+			target = 0EF4654F216AF7FA002BA22B /* NinePicAssistant */;
 			targetProxy = 0EF46570216AF7FC002BA22B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0EF46557216AF7FB002BA22B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EF46558216AF7FB002BA22B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0EF4655C216AF7FC002BA22B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,6 +545,7 @@
 		};
 		0EF46579216AF7FC002BA22B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F09B98ACCDD3364BB8EB288 /* Pods-九图助手.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +565,7 @@
 		};
 		0EF4657A216AF7FC002BA22B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FFC5FC5781A287315F91742 /* Pods-九图助手.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -481,7 +600,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/九图助手.app/九图助手";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NinePicAssistant.app/NinePicAssistant";
 			};
 			name = Debug;
 		};
@@ -502,7 +621,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/九图助手.app/九图助手";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NinePicAssistant.app/NinePicAssistant";
 			};
 			name = Release;
 		};
@@ -549,7 +668,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0EF4654B216AF7FA002BA22B /* Build configuration list for PBXProject "九图助手" */ = {
+		0EF4654B216AF7FA002BA22B /* Build configuration list for PBXProject "NinePicAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EF46576216AF7FC002BA22B /* Debug */,
@@ -558,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EF46578216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "九图助手" */ = {
+		0EF46578216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "NinePicAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EF46579216AF7FC002BA22B /* Debug */,
@@ -567,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EF4657B216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "九图助手Tests" */ = {
+		0EF4657B216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "NinePicAssistantTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EF4657C216AF7FC002BA22B /* Debug */,
@@ -576,7 +695,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0EF4657E216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "九图助手UITests" */ = {
+		0EF4657E216AF7FC002BA22B /* Build configuration list for PBXNativeTarget "NinePicAssistantUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EF4657F216AF7FC002BA22B /* Debug */,
