@@ -13,7 +13,7 @@ class TopViewController: BaseViewController {
 
     var collectionView : UICollectionView?
     let imageArray = ["nineP","library","setting","share"]
-    let textArray = ["NINE-P","HISTORY","SETTING","SHARE"]
+    let textArray = ["NINE-P","DEMO","SETTING","SHARE"]
     let idenContentString = "idenContentString"
     let headIdenString = "headIdenString"
     
@@ -27,19 +27,21 @@ class TopViewController: BaseViewController {
     }
 }
 
+//MARK: - initData
 extension TopViewController{
     func initData(){
         
     }
 }
 
+//MARK: - initUI
 extension TopViewController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func setUI() -> Void {
         
         //  设置 layOut
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = UICollectionViewScrollDirection.vertical  //滚动方向
+        layout.scrollDirection = UICollectionView.ScrollDirection.vertical  //滚动方向
         layout.itemSize = CGSize.init(width: SCREENW/2 - 20, height: SCREENW/2 - 20)
         // 设置CollectionView
         collectionView = UICollectionView(frame: CGRect.init(x: 20, y: 0, width: SCREENW-40, height: SCREENH), collectionViewLayout: layout) as UICollectionView?
@@ -99,8 +101,8 @@ extension TopViewController: UICollectionViewDelegate,UICollectionViewDataSource
         let titleLabel = UILabel.init()
         self.view.addSubview(titleLabel)
         let attText = NSMutableAttributedString.init(string: "Welcome\nTo PNine")
-        attText.addAttributes( [NSAttributedStringKey.foregroundColor : KJColorHX(rgbValue: 0xa3a4a6, malpha: 1),NSAttributedStringKey.font : UIFont.init(name: "PingFangSC-Thin", size: 40) ?? UIFont.systemFont(ofSize: 30)], range: NSRange.init(location: 0, length: 7))
-        attText.addAttributes( [NSAttributedStringKey.foregroundColor : KJColorHX(rgbValue: 0xffffff, malpha: 1),NSAttributedStringKey.font : UIFont.systemFont(ofSize: 30)], range: NSRange.init(location: 8, length: 8))
+        attText.addAttributes( [NSAttributedString.Key.foregroundColor : KJColorHX(rgbValue: 0xa3a4a6, malpha: 1),NSAttributedString.Key.font : UIFont.init(name: "PingFangSC-Thin", size: 40) ?? UIFont.systemFont(ofSize: 30)], range: NSRange.init(location: 0, length: 7))
+        attText.addAttributes( [NSAttributedString.Key.foregroundColor : KJColorHX(rgbValue: 0xffffff, malpha: 1),NSAttributedString.Key.font : UIFont.systemFont(ofSize: 30)], range: NSRange.init(location: 8, length: 8))
         titleLabel.attributedText = attText
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .center
@@ -111,8 +113,8 @@ extension TopViewController: UICollectionViewDelegate,UICollectionViewDataSource
             make.height.equalTo(100)
         }
         
-        let addBtn = UIButton.init(type: UIButtonType.custom)
-        addBtn.setImage(UIImage.init(named: "camera"), for: UIControlState.normal)
+        let addBtn = UIButton.init(type: UIButton.ButtonType.custom)
+        addBtn.setImage(UIImage.init(named: "camera"), for: UIControl.State.normal)
         view.addSubview(addBtn)
         addBtn.snp.makeConstraints { (make) in
             make.centerX.equalTo(view.center.x)
@@ -152,12 +154,27 @@ extension TopViewController: UICollectionViewDelegate,UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("tap ==\(indexPath.row)")
-        
+        switch indexPath.row {
+        case 0:
+            let vc = NinePicViewController()
+            self.present(vc, animated: true) {
+                
+            }
+            break;
+        case 1:
+            let vc = DemoViewController()
+            self.present(vc, animated: true) {
+                
+            }
+            break;
+        default:
+            break;
+        }
     }
     
     //MARK:UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets{
-        return UIEdgeInsetsMake(0, 0, 0, 0)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     

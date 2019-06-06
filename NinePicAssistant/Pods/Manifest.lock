@@ -1,16 +1,20 @@
 PODS:
   - SnapKit (4.0.0)
+  - TLPhotoPicker (1.7.4)
 
 DEPENDENCIES:
   - SnapKit (~> 4.0.0)
+  - TLPhotoPicker
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - SnapKit
+    - TLPhotoPicker
 
 SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  TLPhotoPicker: ced10aa9cdbce11bda2272f919cdace69e964239
 
-PODFILE CHECKSUM: c89145b842b569423d32c4cc18ac7806a28a4459
+PODFILE CHECKSUM: bd387a5f490ef7de34a7d7dbcc4453d068ee9672
 
 COCOAPODS: 1.5.0

@@ -60,6 +60,23 @@ let isIPhone5 = SCREENH == 568 ? true : false
 let isIPhone6 = SCREENH == 667 ? true : false
 /// iPhone 6P
 let isIPhone6P = SCREENH == 736 ? true : false
+/// iPhoneX及以上
+var isiPhoneXAbove: Bool {
+    
+    if UIDevice.current.userInterfaceIdiom == .pad {
+        return false
+    }
+    
+    let size = UIScreen.main.bounds.size
+    let notchValue: Int = Int(size.width/size.height * 100)
+    
+    if 216 == notchValue || 46 == notchValue {
+        
+        return true
+    }
+    
+    return false
+}
 
 /// 下载状态
 enum KJFileStatus: Int {
@@ -166,6 +183,7 @@ let loginNoti = "userCheck"
 let RETURN_OK = 200
 /// 间距
 
+
 //MARK: - 界面
 let KJThemeStyle :Int = 0
 let kLIndicatorSize :CGFloat = SCREENW > 400 ? 40 : 30
@@ -228,7 +246,7 @@ func KJColorHX(rgbValue: UInt,malpha:CGFloat) -> UIColor {
 //MARK: 主题色
 func KJThemeColor()->UIColor{
 //    return KJColorHX(rgbValue: 0x267FBA, malpha: 1)
-        return KJColorHX(rgbValue: 0x00afd7, malpha: 1)
+        return KJColorHX(rgbValue: 0x3cd1d8, malpha: 1)
 //    return KJColorHX(rgbValue: 0x43bafe, malpha: 1)
 }
 

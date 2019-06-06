@@ -56,10 +56,10 @@ extension TabMainViewController{
         let vc = cls.init()
         vc.title = title
         let nav = UINavigationController.init(rootViewController: vc)
-        nav.tabBarItem.image = UIImage.init(named: imageName)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        nav.tabBarItem.selectedImage = UIImage.init(named: ""+imageName+"_selected")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        nav.tabBarItem.image = UIImage.init(named: imageName)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        nav.tabBarItem.selectedImage = UIImage.init(named: ""+imageName+"_selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         
-        UITabBarItem.appearance().setTitleTextAttributes(NSDictionary.init(dictionary: [kCTForegroundColorAttributeName:UIColor.red]) as? [NSAttributedStringKey : Any], for: UIControlState.selected)
+        UITabBarItem.appearance().setTitleTextAttributes(NSDictionary.init(dictionary: [kCTForegroundColorAttributeName:UIColor.red]) as? [NSAttributedString.Key : Any], for: UIControl.State.selected)
         
         //        [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
         //            [UIColor grayColor], NSForegroundColorAttributeName,

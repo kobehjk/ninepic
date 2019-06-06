@@ -10,6 +10,11 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    //隐藏状态栏
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //定义渐变的颜色
@@ -28,6 +33,8 @@ class BaseViewController: UIViewController {
         //设置其CAGradientLayer对象的frame，并插入view的layer
         gradientLayer.frame = self.view.frame
         self.view.layer.insertSublayer(gradientLayer, at: 0)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
