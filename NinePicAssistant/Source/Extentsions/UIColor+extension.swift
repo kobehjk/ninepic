@@ -26,7 +26,7 @@ extension UIColor{
     }
     
     convenience init?(hex:String) {
-        guard hex.characters.count>=6 else {
+        guard hex.count>=6 else {
             return nil
         }
         

@@ -18,6 +18,7 @@
 		0E959B2C21955FBC009FB3BC /* NSString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E959B2621955FBB009FB3BC /* NSString+Extension.swift */; };
 		0E959B2D21955FBC009FB3BC /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E959B2721955FBC009FB3BC /* UIColor+extension.swift */; };
 		0E959B2F21957ABC009FB3BC /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E959B2E21957ABC009FB3BC /* ShowViewController.swift */; };
+		0ED69EA3233220CA004D0746 /* DeviceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED69EA2233220CA004D0746 /* DeviceTool.swift */; };
 		0EF465A7216B55AE002BA22B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF465A6216B55AE002BA22B /* AppDelegate.swift */; };
 		0EF465AE216B55AF002BA22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF465AD216B55AF002BA22B /* Assets.xcassets */; };
 		0EF465B1216B55AF002BA22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF465AF216B55AF002BA22B /* LaunchScreen.storyboard */; };
@@ -65,6 +66,7 @@
 		0E959B2721955FBC009FB3BC /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		0E959B2E21957ABC009FB3BC /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		0E959B502195C3F3009FB3BC /* NinePicAssistant copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NinePicAssistant copy-Info.plist"; path = "/Users/hejinkun/Documents/GitHub/ninepic/NinePicAssistant/NinePicAssistant copy-Info.plist"; sourceTree = "<absolute>"; };
+		0ED69EA2233220CA004D0746 /* DeviceTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTool.swift; sourceTree = "<group>"; };
 		0EF465A3216B55AE002BA22B /* NinePicAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinePicAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF465A6216B55AE002BA22B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF465AD216B55AF002BA22B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,11 +130,121 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0E793F08229F7F1F000DADA0 /* General */ = {
+		0ED69E9623321F1A004D0746 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0EF465B2216B55AF002BA22B /* Info.plist */,
+				0EF465AD216B55AF002BA22B /* Assets.xcassets */,
+				0EF465AF216B55AF002BA22B /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0ED69E9723321F58004D0746 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0ED69E9F23322026004D0746 /* Base */,
+				0ED69E9E23321FE4004D0746 /* Ventors */,
+				0ED69E9D23321FDB004D0746 /* Mediator */,
+				0ED69E9C23321FCF004D0746 /* Extentsions */,
+				0ED69E9B23321FC5004D0746 /* Utilities */,
+				0ED69E9A23321FB7004D0746 /* Helps */,
+				0ED69E9923321FA1004D0746 /* Stores */,
+				0ED69E9823321F7A004D0746 /* Modules */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0ED69E9823321F7A004D0746 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0ED69EA4233220F0004D0746 /* MainModules */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0ED69E9923321FA1004D0746 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = General;
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		0ED69E9A23321FB7004D0746 /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+				0ED69EA2233220CA004D0746 /* DeviceTool.swift */,
+				0EF465D6216B560F002BA22B /* File.swift */,
+			);
+			path = Helps;
+			sourceTree = "<group>";
+		};
+		0ED69E9B23321FC5004D0746 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0EF465D5216B560F002BA22B /* Common.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0ED69E9C23321FCF004D0746 /* Extentsions */ = {
+			isa = PBXGroup;
+			children = (
+				0E959B2521955FBB009FB3BC /* UIViewController+Extension.swift */,
+				0E959B2421955FBB009FB3BC /* UIView+Extension.swift */,
+				0E959B2621955FBB009FB3BC /* NSString+Extension.swift */,
+				0E959B2721955FBC009FB3BC /* UIColor+extension.swift */,
+				0E959B2321955FBB009FB3BC /* UIImage+Extendion.swift */,
+				0E959B2221955FBB009FB3BC /* UINavigationBar+Extension.swift */,
+			);
+			path = Extentsions;
+			sourceTree = "<group>";
+		};
+		0ED69E9D23321FDB004D0746 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		0ED69E9E23321FE4004D0746 /* Ventors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ventors;
+			sourceTree = "<group>";
+		};
+		0ED69E9F23322026004D0746 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0EF465DC216B5610002BA22B /* BaseViewController.swift */,
+				0EF465DD216B5610002BA22B /* TabMainViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0ED69EA4233220F0004D0746 /* MainModules */ = {
+			isa = PBXGroup;
+			children = (
+				0ED69EA623322128004D0746 /* View */,
+				0ED69EA523322122004D0746 /* Model */,
+				0EF465D8216B5610002BA22B /* Controller */,
+			);
+			path = MainModules;
+			sourceTree = "<group>";
+		};
+		0ED69EA523322122004D0746 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0ED69EA623322128004D0746 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0EF4659A216B55AE002BA22B = {
@@ -161,13 +273,9 @@
 		0EF465A5216B55AE002BA22B /* NinePicAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				0E793F08229F7F1F000DADA0 /* General */,
-				0EF465D8216B5610002BA22B /* controller */,
-				0EF465D4216B560F002BA22B /* Tools */,
+				0ED69E9723321F58004D0746 /* Source */,
+				0ED69E9623321F1A004D0746 /* Assets */,
 				0EF465A6216B55AE002BA22B /* AppDelegate.swift */,
-				0EF465AD216B55AF002BA22B /* Assets.xcassets */,
-				0EF465AF216B55AF002BA22B /* LaunchScreen.storyboard */,
-				0EF465B2216B55AF002BA22B /* Info.plist */,
 			);
 			path = NinePicAssistant;
 			sourceTree = "<group>";
@@ -190,30 +298,13 @@
 			path = NinePicAssistantUITests;
 			sourceTree = "<group>";
 		};
-		0EF465D4216B560F002BA22B /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				0E959B2621955FBB009FB3BC /* NSString+Extension.swift */,
-				0E959B2721955FBC009FB3BC /* UIColor+extension.swift */,
-				0E959B2321955FBB009FB3BC /* UIImage+Extendion.swift */,
-				0E959B2221955FBB009FB3BC /* UINavigationBar+Extension.swift */,
-				0E959B2421955FBB009FB3BC /* UIView+Extension.swift */,
-				0E959B2521955FBB009FB3BC /* UIViewController+Extension.swift */,
-				0EF465D5216B560F002BA22B /* Common.swift */,
-				0EF465D6216B560F002BA22B /* File.swift */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		0EF465D8216B5610002BA22B /* controller */ = {
+		0EF465D8216B5610002BA22B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				0EF465E5216B5D65002BA22B /* NinePic */,
 				0EF465D9216B5610002BA22B /* Top */,
-				0EF465DC216B5610002BA22B /* BaseViewController.swift */,
-				0EF465DD216B5610002BA22B /* TabMainViewController.swift */,
 			);
-			path = controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		0EF465D9216B5610002BA22B /* Top */ = {
@@ -430,6 +521,7 @@
 				0EF465DF216B5610002BA22B /* File.swift in Sources */,
 				0EF465E7216B5D81002BA22B /* NinePicViewController.swift in Sources */,
 				0EF465A7216B55AE002BA22B /* AppDelegate.swift in Sources */,
+				0ED69EA3233220CA004D0746 /* DeviceTool.swift in Sources */,
 				0EF465E3216B5610002BA22B /* BaseViewController.swift in Sources */,
 				0EF465E1216B5610002BA22B /* TopViewController.swift in Sources */,
 				0E8C57082194292200C35A0D /* DemoViewController.swift in Sources */,
@@ -611,7 +703,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobehjk.NinePAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NinePicDevProfile;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -633,7 +725,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobehjk.NinePAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NinePicDisProfile;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
